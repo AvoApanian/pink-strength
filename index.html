@@ -97,7 +97,6 @@ content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsa
     
     <h1 class="main-title">Tu es la meilleure<br><em style="font-weight:400">que tu ne le penses</em> 💖</h1>
     <p class="subtitle">Je crois en toi, tu vas réussir 🌸</p>
-    <p class="desc">Ce jardin a été créé spécialement pour toi,<br>pour te rappeler à quel point tu es extraordinaire.</p>
     <div class="scroll-hint">
       <span style="font-size:1rem">🌹</span>
       <div style="width:1px;height:32px;background:linear-gradient(180deg,rgba(255,105,180,.6),transparent)"></div>
@@ -115,7 +114,7 @@ content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsa
 
   <div class="section stress-section">
     <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.3rem,4vw,2.2rem);color:#880e4f;font-style:italic">Tu ressens du stress ? 🌸</h2>
-    <button class="stress-btn" id="stress-btn" onclick="handleStress(event)">Clique ici quand tu stresses 💗</button>
+    <button class="stress-btn" id="stress-btn" id="stress-btn">Clique ici quand tu stresses 💗</button>
     <div id="calm-card" style="display:none">
       <div class="calm-card">
         <div style="font-size:clamp(30px,7vw,38px);margin-bottom:10px;animation:floatY 3s ease-in-out infinite">🌸</div>
@@ -128,7 +127,8 @@ content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsa
           <span style="animation:twinkle 1.5s ease-in-out .6s infinite;display:inline-block;font-size:13px">🌸</span>
           <span style="animation:twinkle 1.5s ease-in-out .8s infinite;display:inline-block;font-size:13px">💗</span>
         </div>
-        <button class="close-small" onclick="closeCalmCard()">Merci, je me sens mieux 🌸</button>
+        <!-- <button class="close-small" onclick="closeCalmCard()">Merci, je me sens mieux 🌸</button> -->
+        <button class="close-small id="merci-btn">Merci, je me sens mieux 🌸</button>
       </div>
     </div>
   </div>
